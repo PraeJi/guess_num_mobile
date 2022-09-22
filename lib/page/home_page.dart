@@ -27,7 +27,6 @@ class _HomePageState extends State<HomePage> {
     });*/
 
     var guess = int.tryParse(_input.text);
-    //if (_input.text.length <= 3) {
       if (guess == null) {
         setState(() {
           _feedbackText = 'ไม่ถูกต้อง กรุณาใส่เป็นตัวเลข';
@@ -53,7 +52,6 @@ class _HomePageState extends State<HomePage> {
           });
         }
       }
-    //}
   }
 
   void _handleClickButton(var num) {
@@ -143,7 +141,7 @@ class _HomePageState extends State<HomePage> {
             borderRadius: BorderRadius.circular(20.0), //ความมนของมุม box
             boxShadow: const [
               //เงาของ box
-              BoxShadow(color: Colors.purple, blurRadius: 10)
+              BoxShadow(color: Colors.purple, blurRadius: 5)
             ],
           ),
           child: Column(
